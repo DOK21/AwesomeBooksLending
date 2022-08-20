@@ -1,0 +1,22 @@
+Models
+
+Users: 
+_Id: ObjectId
+username: String|Unique|Required
+email: String|Unique|Required
+password: String
+books: [ObjectId]
+
+Books
+_Id: ObjectId
+title: String|Unique
+author: [String|Required]Required
+publisher: String
+nsfw: Boolean -> false
+genre: [String]
+description: String
+
+genre: 
+_id: ObjectId
+title: String|Required|Unique
+
