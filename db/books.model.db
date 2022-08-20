@@ -15,6 +15,7 @@ publisher: String
 nsfw: Boolean -> false
 genre: [String]
 description: String
+summary: String
 
 genre: 
 _id: ObjectId
