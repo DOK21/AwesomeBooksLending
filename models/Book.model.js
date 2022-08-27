@@ -31,7 +31,7 @@ const BookSchema = new mongoose.Schema({
   genre: {
     type: [String],
     enum: ["history", "comedy", "romance", "adventure", "psychology"],
-    required: true,
+    // required: true,
     //If somehow we forget to send the value this will prevent the backend from crashing.
     //Because it will send an "undefined"  in javascript and as it is not in the array, the backend will crash.
     // MongoDb will say "undefined is not a valid value"
@@ -39,7 +39,7 @@ const BookSchema = new mongoose.Schema({
   language: {
     type: [String],
     enum: ["English", "French", "Russian", "Arabic", "Japanese"],
-    required: true,
+    // required: true,
   },
 });
 
