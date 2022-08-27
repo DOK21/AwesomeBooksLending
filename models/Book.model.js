@@ -37,6 +37,11 @@ const BookSchema = new mongoose.Schema({
     //Because it will send an "undefined"  in javascript and as it is not in the array, the backend will crash.
     // MongoDb will say "undefined is not a valid value"
   },
+  language: {
+    type: [String],
+    enum: ["English","French","Russian","Arabic","Japanese"]
+    required: true,
+  },
 });
 
 //just like in the recipe lab the skill level is the genre here

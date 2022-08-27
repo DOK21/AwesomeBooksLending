@@ -5,18 +5,21 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
-router.get("/about",(req,res,next)=>{
-  res.render("about")
-})
-router.get("/ListOfBooks",(req,res,next)=>{
-  res.render("ListOfBooks")
-})
+router.get("/about", (req, res, next) => {
+  res.render("about");
+});
+router.get("/ListOfBooks", (req, res, next) => {
+  res.render("ListOfBooks");
+});
+router.get("/BookCreationForum", (req, res, next) => {
+  res.render("BookCreationForum");
+});
 
-// controller! 
-// "/contact-us" is called slash contact-us end point. 
-// a controller (ex: get, post, delete etc) is a way to handle requests. 
-router.get("/contact-us", (req,res,next)=>{
-  res.render("contact-us")
-})
+// controller!
+// "/contact-us" is called slash contact-us end point.
+// a controller (ex: get, post, delete etc) is a way to handle requests.
+router.get("/contact-us", (req, res, next) => {
+  res.render("contact-us");
+});
 
 module.exports = router;
