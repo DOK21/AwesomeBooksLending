@@ -1,10 +1,12 @@
 In this section we wanna be able to have a space to submit the name of the book
-with the name of the genre and the language (3 spaces and 1 submit buttons)
+with the name of the genre and the language ( spaces and 1 submit buttons)
 
-{{#each book}}
-  <p>
-    {{name}}
-  </p>
-{{/each}}
-<div>From: {{genre}} </div>
-<div> From: {{language}} </div>
+<form action="/auth/BookCreationForum" method="POST">
+  <label>
+    <input type="text" name="title" />
+  </label>
+  <label>
+    <input type="text" name="author" />
+  </label>
+  <button type="submit"> Submit </button>
+</form>

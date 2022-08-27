@@ -13,7 +13,6 @@ const BookSchema = new mongoose.Schema({
   //emum is a schema validator . We can use an emum to save creating genre model.
   publisher: {
     type: String,
-    required: true,
   },
   //nsfw(not safe for words): {
   // type: Boolean,
@@ -39,7 +38,7 @@ const BookSchema = new mongoose.Schema({
   },
   language: {
     type: [String],
-    enum: ["English","French","Russian","Arabic","Japanese"]
+    enum: ["English", "French", "Russian", "Arabic", "Japanese"],
     required: true,
   },
 });

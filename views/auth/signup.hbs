@@ -1,14 +1,18 @@
 <form action="/auth/signup" method="POST">
-   <label> Username
-      <input type="text" name="username">
-   </label>
-   <label> Password
-      <input type="password" name="password">
-   </label>
+  //It is like writing a letter. We wanna send (post in our case) a letter but
+  we need to know the destination (auth/signup over here)
+  <label>
+    Username
+    <input type="text" name="username" />
+  </label>
+  <label>
+    Password
+    <input type="password" name="password" />
+  </label>
 
-   <button type="submit">Submit</button>
+  <button type="submit">Submit</button>
 </form>
 
 {{#if errorMessage}}
-   {{errorMessage}}
+  {{errorMessage}}
 {{/if}}
